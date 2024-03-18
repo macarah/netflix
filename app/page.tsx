@@ -26,7 +26,7 @@ export default function Home() {
           className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
           src="/Netflix.svg"
           alt="Next.js Logo"
-          width={380}
+          width={480}
           height={127}
           priority
         />
