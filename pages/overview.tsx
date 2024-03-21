@@ -1,4 +1,4 @@
-import '@/app/globals.css';
+import '/app/globals.css';
 import * as d3 from 'd3';
 import React from 'react';
 import Map from './Map';
