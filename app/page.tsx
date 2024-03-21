@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from 'next/link';
 import { ChevronsDown, type LucideIcon,
 } from "lucide-react"
+import React from 'react';
 
 // Define your links
 const links = [
@@ -30,7 +31,7 @@ export default function Home() {
           height={127}
           priority
         />
-        <p className="text-center font-mono text-sm mb-4">An exploration of transnational comedic culture</p>
+        <p className="text-center font-mono text-sm mb-4">An exploration of transnational romantic culture</p>
         </div>
       </div>
 
@@ -63,8 +64,9 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col items-center mb-8 mt-5">
-        <ChevronsDown size={72} />
-        <p className="text-sm mt-2 font-semibold">Click to continue</p>
+        <Link href="/overview"> {/* Wrap with Link component */}
+            <ChevronsDown size={72} />
+        </Link>
       </div>
 
     </main>
