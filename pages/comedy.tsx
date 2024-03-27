@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function App() {
+export default function Comedy() {
   // State variables to track hover state for each image
   const [hoveredImages, setHoveredImages] = useState(Array(18).fill(false));
 
