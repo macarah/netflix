@@ -1,19 +1,65 @@
-import '@/app/globals.css'
-export default function Comedy() {
+import React, { useState } from 'react';
+
+export default function App() {
+  // State variables to track hover state for each image
+  const [hoveredImages, setHoveredImages] = useState(Array(18).fill(false));
+
+  // Function to handle mouse enter event
+  const handleMouseEnter = (index) => {
+    const newHoveredImages = [...hoveredImages];
+    newHoveredImages[index] = true;
+    setHoveredImages(newHoveredImages);
+  };
+
+  // Function to handle mouse leave event
+  const handleMouseLeave = (index) => {
+    const newHoveredImages = [...hoveredImages];
+    newHoveredImages[index] = false;
+    setHoveredImages(newHoveredImages);
+  };
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Comedy Page
-        </p>
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', maxWidth: '100%', overflowX: 'auto' }}>
+        {[...Array(6).keys()].map((rowIndex) => (
+          <div key={rowIndex} style={{ marginBottom: '1rem' }}>
+            <h2>Row {rowIndex + 1}</h2>
+            <div style={{ display: 'flex', gap: '1rem' }}>
+              {[...Array(3).keys()].map((colIndex) => {
+                const index = rowIndex * 3 + colIndex;
+                return (
+                  <div className="mb-4" key={index} style={{ flex: '0 0 calc(33.333% - 1rem)', position: 'relative' }}>
+                    <div
+                      className="relative max-w-xs overflow-hidden bg-cover bg-no-repeat"
+                      onMouseEnter={() => handleMouseEnter(index)}
+                      onMouseLeave={() => handleMouseLeave(index)}
+                    >
+                      <img
+                        src='/USA/Bridgerton.jpeg'
+                        className="max-w-xs"
+                        alt="Louvre"
+                        style={{ width: '100%', height: 'auto' }}
+                      />
+                      {hoveredImages[index] && (
+                        <div className="mask" style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(0, 0, 0, 0.6)' }}>
+                          <div className="d-flex justify-content-center align-items-center h-100">
+                            <p className="text-white mb-0">Can you see me?</p>
+                          </div>
+                        </div>
+                      )}
+                      <div
+                        className={`absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-indigo-700 bg-fixed opacity-0 transition duration-300 ease-in-out ${
+                          hoveredImages[index] ? 'hover:opacity-50' : 'hover:opacity-0'
+                        }`}
+                      ></div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        ))}
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-      <div className="relative">
-        </div>
-      </div>
-
-      
-    </main>
+    </div>
   );
 }

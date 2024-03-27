@@ -41,23 +41,30 @@ const data = {
 };
 
 const MostPopularRomances = () => {
-    return (
-      <div className="most-popular-romances" style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-        {Object.entries(data).map(([country, images]) => (
-          <div key={country} className="country-images" style={{ marginBottom: '20px' }}>
-            <h3>{country}</h3>
-            <div className="image-row-container" style={{ overflowX: 'auto', }}>
-              <div className="image-row" style={{ display: 'flex', gap: '20px' }}>
-                {images.map((image, index) => (
-                  <img key={index} src={image.src} alt={image.alt} style={{ width: '300px', height: '375px', objectFit: 'cover', marginTop: '20px' }} />
-                ))}
-              </div>
+  return (
+    <div className="most-popular-romances" style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+      {Object.entries(data).map(([country, images]) => (
+        <div key={country} className="country-images" style={{ marginBottom: '20px' }}>
+          <h3>{country}</h3>
+          <div className="image-row-container" style={{ overflowX: 'auto', }}>
+            <div className="image-row" style={{ display: 'flex', gap: '20px' }}>
+              {images.map((image, index) => (
+                <img
+                  key={index}
+                  src={image.src}
+                  className="max-w-xs transition duration-300 ease-in-out hover:scale-110"
+                  alt={image.alt}
+                  style={{ width: '300px', height: '375px', objectFit: 'cover', marginTop: '20px' }}
+  
+                />
+              ))}
             </div>
           </div>
-        ))}
-      </div>
-    );
-  };
+        </div>
+      ))}
+    </div>
+  );
+};
   
 
 export default MostPopularRomances;

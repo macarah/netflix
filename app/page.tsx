@@ -9,7 +9,7 @@ const links = [
   { name: 'The Data', href: 'https://github.com/macarah/netflix_comedy' },
   { name: 'About', href: '/about' },
   { name: 'The Best of Netflix', href: '/overview' },
-  { name: 'Comedy across Borders', href: '/comedy' },
+  { name: 'Romance across Borders', href: '/comedy' },
 ];
 
 export default function Home() {
@@ -55,7 +55,7 @@ export default function Home() {
                 {link.name === 'The Data' && 'Check out the GitHub repository to access the data and documentation.'}
                 {link.name === 'About' && 'Find more information about the project and applications of understanding dynamic transnational media flows.'}
                 {link.name === 'The Best of Netflix' && 'Explore the most popular shows and films on Netflix between January and June of 2023.'}
-                {link.name === 'Comedy across Borders' && 'Here, we analyze the comedic differences and similarities of popular media for select countries.'}
+                {link.name === 'Romance across Borders' && 'Here, we analyze the romantic differences and similarities of popular media for select countries.'}
               </p>
             </div>
           </Link>
