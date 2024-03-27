@@ -5,14 +5,14 @@ export default function App() {
   const [hoveredImages, setHoveredImages] = useState(Array(18).fill(false));
 
   // Function to handle mouse enter event
-  const handleMouseEnter = (index) => {
+  const handleMouseEnter = (index: number) => {
     const newHoveredImages = [...hoveredImages];
     newHoveredImages[index] = true;
     setHoveredImages(newHoveredImages);
   };
 
   // Function to handle mouse leave event
-  const handleMouseLeave = (index) => {
+  const handleMouseLeave = (index: number) => {
     const newHoveredImages = [...hoveredImages];
     newHoveredImages[index] = false;
     setHoveredImages(newHoveredImages);
