@@ -1,18 +1,19 @@
 import React, { useState } from 'react';
 import { ChevronsDown, type LucideIcon,
 } from "lucide-react"
+import { ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
 import '/app/globals.css';
 
 
 const data = {
-  USA: [
+  'United States of America': [
     { src: '/USA/Bridgerton.jpeg', alt: 'Image 1', synopsis: "The eight close-knit siblings of the Bridgerton family look for love and happiness in London high society. Inspired by Julia Quinn's bestselling novels."},
     { src: '/USA/virgin.jpg', alt: 'Image 2', synopsis: 'Searching for a fresh start, a nurse practitioner moves from LA to a remote northern California town and is surprised by what — and who — she finds.' },
     { src: '/USA/You.jpeg', alt: 'Image 3', synopsis: 'A dangerously charming, intensely obsessive young man goes to extreme measures to insert himself into the lives of those he is transfixed by.' },
     // Add more images as needed
   ],
-  UAE: [ 
+  'United Arab Emirates': [ 
     { src: '/UAE/alchemy.jpg', alt: 'Image 1', synopsis: "A powerful sorceress in a blind woman's body encounters a man from a prestigious family, who wants her help to change his destiny." },
     { src: '/UAE/business.jpg', alt: 'Image 2', synopsis: 'In disguise as her friend, Ha-ri shows up to a blind date to scare him away. But plans go awry when he turns out to be her CEO — and makes a proposal.' },
     { src: '/UAE/hometown.png', alt: 'Image 3', synopsis: 'A big-city dentist opens up a practice in a close-knit seaside village, home to a charming jack-of-all-trades who is her polar opposite in every way.' },
@@ -64,8 +65,16 @@ export default function Comedy() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
+     <div className="fixed top-0 left-0 z-50 p-4">
+        <Link href="/">
+          <div className="flex items-center">
+            <ArrowLeft size={24} />
+            <span className="ml-2">Back</span>
+          </div>
+        </Link>
+      </div>
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
+      <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
           Most Popular Romance Shows on Netflix by Country
         </p>
       </div>
@@ -76,7 +85,7 @@ export default function Comedy() {
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', minHeight: '100vh' }}>
       {Object.entries(data).map(([country, images]) => (
         <div key={country} style={{ marginBottom: '1rem', maxWidth: '100%' }}>
-          <h2>{country}</h2>
+          <h2 className="font-bold text-lg mt-10 mb-8">{country}</h2>
           <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '1rem' }}>
             {images.map((image, index) => (
               <div key={index} style={{ flex: '0 0 calc(33.333% - 1rem)', position: 'relative' }}>
