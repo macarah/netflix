@@ -7,39 +7,39 @@ import '/app/globals.css';
 
 const data = {
   USA: [
-    { src: '/USA/Bridgerton.jpeg', alt: 'Image 1', synopsis: 'Synopsis 1'},
-    { src: '/USA/virgin.jpg', alt: 'Image 2', synopsis: 'Synopsis 2' },
-    { src: '/USA/You.jpeg', alt: 'Image 3', synopsis: 'Synopsis 3' },
+    { src: '/USA/Bridgerton.jpeg', alt: 'Image 1', synopsis: "The eight close-knit siblings of the Bridgerton family look for love and happiness in London high society. Inspired by Julia Quinn's bestselling novels."},
+    { src: '/USA/virgin.jpg', alt: 'Image 2', synopsis: 'Searching for a fresh start, a nurse practitioner moves from LA to a remote northern California town and is surprised by what — and who — she finds.' },
+    { src: '/USA/You.jpeg', alt: 'Image 3', synopsis: 'A dangerously charming, intensely obsessive young man goes to extreme measures to insert himself into the lives of those he is transfixed by.' },
     // Add more images as needed
   ],
   UAE: [ 
-    { src: '/UAE/alchemy.jpg', alt: 'Image 1', synopsis: 'Synopsis 1' },
-    { src: '/UAE/business.jpg', alt: 'Image 2', synopsis: 'Synopsis 2' },
-    { src: '/UAE/hometown.png', alt: 'Image 3', synopsis: 'Synopsis 3' },
+    { src: '/UAE/alchemy.jpg', alt: 'Image 1', synopsis: "A powerful sorceress in a blind woman's body encounters a man from a prestigious family, who wants her help to change his destiny." },
+    { src: '/UAE/business.jpg', alt: 'Image 2', synopsis: 'In disguise as her friend, Ha-ri shows up to a blind date to scare him away. But plans go awry when he turns out to be her CEO — and makes a proposal.' },
+    { src: '/UAE/hometown.png', alt: 'Image 3', synopsis: 'A big-city dentist opens up a practice in a close-knit seaside village, home to a charming jack-of-all-trades who is her polar opposite in every way.' },
     // Add more images as needed
   ],
   Germany: [ 
-    { src: '/Germany/betty.jpg', alt: 'Image 1', synopsis: 'Synopsis 1' },
-    { src: '/Germany/Bridgerton.jpeg', alt: 'Image 2', synopsis: 'Synopsis 2' },
-    { src: '/Germany/outerbanks.jpeg', alt: 'Image 3', synopsis: 'Synopsis 3' },
+    { src: '/Germany/betty.jpg', alt: 'Image 1', synopsis: "Beatriz Aurora Rincon Lozano, a young climber, takes a job at V&M Fashion as secretary to the company president." },
+    { src: '/Germany/Bridgerton.jpeg', alt: 'Image 2', synopsis: "The eight close-knit siblings of the Bridgerton family look for love and happiness in London high society. Inspired by Julia Quinn's bestselling novels."},
+    { src: '/Germany/outerbanks.jpeg', alt: 'Image 3', synopsis: "On an island of haves and have-nots, teen John B enlists his three best friends to hunt for a legendary treasure linked to his father's disappearance."},
     // Add more images as needed
   ],
   Japan: [ 
-    { src: '/Japan/apoth.jpeg', alt: 'Image 1', synopsis: 'Synopsis 1' },
-    { src: '/Japan/crash.jpg', alt: 'Image 2', synopsis: 'Synopsis 2' },
-    { src: '/Japan/king.webp', alt: 'Image 3', synopsis: 'Synopsis 3' },
+    { src: '/Japan/apoth.jpeg', alt: 'Image 1', synopsis: "Obsessed with poison and medicine, a servant in the Emperor's palace draws on her roots as a healer in the red light district to solve mysterious cases." },
+    { src: '/Japan/crash.jpg', alt: 'Image 2', synopsis: "A paragliding mishap drops a South Korean heiress in North Korea -- and into the life of an army officer, who decides he will help her hide." },
+    { src: '/Japan/king.webp', alt: 'Image 3', synopsis: "When the crown prince is killed, his twin sister assumes the throne while trying to keep her identity and affection for her first love a royal secret." },
     // Add more images as needed
   ],
   Kenya: [ 
-    { src: '/Kenya/Bridgerton.jpeg', alt: 'Image 1', synopsis: 'Synopsis 1' },
-    { src: '/Kenya/marked.jpeg', alt: 'Image 2', synopsis: 'Synopsis 2' },
-    { src: '/Kenya/sex.jpg', alt: 'Image 3', synopsis: 'Synopsis 3' },
+    { src: '/Kenya/Bridgerton.jpeg', alt: 'Image 1', synopsis: "The eight close-knit siblings of the Bridgerton family look for love and happiness in London high society. Inspired by Julia Quinn's bestselling novels." },
+    { src: '/Kenya/marked.jpeg', alt: 'Image 2', synopsis: "A man hell-bent on exacting revenge on the organ trafficking organization that murdered his wife becomes involved with the woman who received her heart." },
+    { src: '/Kenya/sex.jpg', alt: 'Image 3', synopsis: "A woman's daring sexual past collides with her married-with-kids present when the bad-boy ex she can't stop fantasizing about crashes back into her life." },
     // Add more images as needed
   ],
   Mexico: [ 
-    { src: '/Mexico/betty.webp', alt: 'Image 1', synopsis: 'Synopsis 1' },
-    { src: '/Mexico/reina.jpg', alt: 'Image 2', synopsis: 'Synopsis 2' },
-    { src: '/Mexico/plata.jpg', alt: 'Image 3', synopsis: 'Synopsis 3' },
+    { src: '/Mexico/betty.webp', alt: 'Image 1', synopsis: "An aspiring writer works her way up the ladder at a fashion magazine, despite her questionable wardrobe choices and doubting coworkers." },
+    { src: '/Mexico/reina.jpg', alt: 'Image 2', synopsis: "After years of blood, sweat and tears, a woman from humble beginnings finds herself in the perilous position of being a legend in drug trafficking." },
+    { src: '/Mexico/plata.jpg', alt: 'Image 3', synopsis: "Poor salesman Rafael and wealthy business executive Alejandra are two strangers who suffer a car accident that changes their lives and intertwines their futures."},
     // Add more images as needed
   ],
   // Add more countries and images as needed
@@ -51,7 +51,7 @@ export default function Comedy() {
   const [synopsis, setSynopsis] = useState('');
 
   // Function to handle mouse enter event
-  const handleMouseEnter = (image, synopsis) => {
+  const handleMouseEnter = (image: any, synopsis: any) => {
     setHoveredImage(image);
     setSynopsis(synopsis);
   };
