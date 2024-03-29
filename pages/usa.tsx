@@ -19,7 +19,7 @@ export default function USA() {
   const [synopsis, setSynopsis] = useState('');
 
   // Function to handle mouse enter event
-  const handleMouseEnter = (image: any, synopsis: any) => {
+  const handleMouseEnter = (image: any, synopsis:any) => {
     setHoveredImage(image);
     setSynopsis(synopsis);
   };
@@ -84,71 +84,72 @@ export default function USA() {
       </div>
 
       <div className="max-w-5xl mx-auto w-full">
-        <p className="text-center text-lg mt-4 mb-8">From the <b>Bridgerton: Season 2</b> subreddit, we observed that comments with a positive sentiment score mainly highlighted the chemistry between characters Kate and Anthony, along with references to similarities between the show and the book. On the other hand, comments with a negative sentiment score often mentioned disparities between the show and the book, the presence of a love triangle, and the lack of a build up in the relationship between Kate and Anthony. The table below highlights the positive and negative comments that reference both Kate and Anthony:</p>
-        <div className="flex justify-center mb-8">
-          <div className="image-container" style={{ marginRight: '1rem' }}>
-            <p className="text-center font-bold">Negative</p>
-            <img className="enlarge-on-hover" src="/USA/KA_neg.png" alt="Negative Sentiment" />
-          </div>
-          <div className="image-container" style={{ marginLeft: '1rem' }}>
-            <p className="text-center font-bold">Positive</p>
-            <img className="enlarge-on-hover" src="/USA/Kate_Anthony.png" alt="Positive Sentiment" />
-          </div>
-        </div>
-        <p className="text-center text-lg mt-2 mb-8">Approximately 22% of the 718 unique negative Bridgerton comments referred to Kate and/or Anthony. From the negative table of subreddit comments, we see a general frustration amongst the audience in the lack of a focus on the plot of Kate and Anthony, leaving viewers disappointed in the lack of “fluff”, a “happy ending”, and “passion.” In contrast, of the 420 unique positive reviews, approximately 16% referenced Kate and/or Anthony. From the positive table of subreddit comments, we see that there is a general love for the chemistry between Kate and Anthony amongst the audience. It is worth noting that 19% of the positive comments referenced the book and 10% of the negative comments referenced the book indicating a strong book-appreciating viewership.</p>
-      </div>
+  <p className="text-center text-lg mt-4 mb-8">From the <b>Bridgerton: Season 2</b> subreddit, we observed that comments with a positive sentiment score mainly highlighted the chemistry between characters Kate and Anthony, along with references to similarities between the show and the book. On the other hand, comments with a negative sentiment score often mentioned disparities between the show and the book, the presence of a love triangle, and the lack of a build up in the relationship between Kate and Anthony. The table below highlights the positive and negative comments that reference both Kate and Anthony:</p>
+  <div className="flex justify-center mb-8">
+    <div className="image-container" style={{ marginRight: '1rem' }}>
+      <p className="text-center font-bold">Negative</p>
+      <img className="enlarge-on-hover" src="/USA/KA_neg.png" alt="Negative Sentiment" />
+    </div>
+    <div className="image-container" style={{ marginLeft: '1rem' }}>
+      <p className="text-center font-bold">Positive</p>
+      <img className="enlarge-on-hover" src="/USA/Kate_Anthony.png" alt="Positive Sentiment" />
+    </div>
+  </div>
+  <p className="text-center text-lg mt-2 mb-8">Approximately 22% of the 718 unique negative Bridgerton comments referred to Kate and/or Anthony. From the negative table of subreddit comments, we see a general frustration amongst the audience in the lack of a focus on the plot of Kate and Anthony, leaving viewers disappointed in the lack of &quot;fluff&quot;, a &quot;happy ending&quot;, and &quot;passion.&quot; In contrast, of the 420 unique positive reviews, approximately 16% referenced Kate and/or Anthony. From the positive table of subreddit comments, we see that there is a general love for the chemistry between Kate and Anthony amongst the audience. It is worth noting that 19% of the positive comments referenced the book and 10% of the negative comments referenced the book indicating a strong book-appreciating viewership.</p>
+</div>
 
-      <div className="max-w-5xl mx-auto w-full" style={{ borderTop: '2px dashed white', marginTop: '20px', marginBottom: '20px' }}></div>
+<div className="max-w-5xl mx-auto w-full" style={{ borderTop: '2px dashed white', marginTop: '20px', marginBottom: '20px' }}></div>
 
-      <div className="max-w-5xl mx-auto w-full">
-        <p className="text-center text-lg mt-2 mb-8">From the <b>Virgin River: Season 4</b> subreddit, positive sentiment comments primarily emphasized the chemistry between characters Brie and Brady, as well as Mel and Jack. Additionally, they noted the frequent use of subjunctive mood verbs like "I hope," "I prefer," and "I think," reflecting the speculative nature enabled by the show's continuity, which engages the audience. Conversely, negative sentiment comments often critiqued the perceived shortcomings in the relationship between Mel and Jack, along with expressing disapproval of the relationship between Brie and Mark. These negative remarks utilized verbs such as "hate," "stress," "annoy," and "irritate" to convey dissatisfaction with certain character interactions, character development, and scenes.</p>
-        <div className="flex justify-center mb-8">
-          <div className="image-container" style={{ marginRight: '1rem' }}>
-            <p className="text-center font-bold">Negative</p>
-            <img src="/USA/virgin_nerneg.png" alt="Negative Sentiment" />
-          </div>
-          <div className="image-container" style={{ marginLeft: '1rem' }}>
-            <p className="text-center font-bold">Positive</p>
-            <img src="/USA/virgin_nerpos.png" alt="Positive Sentiment" />
-          </div>
-        </div>
-        <p className="text-center text-lg mt-2 mb-8">From the table we see a noticeable difference in the character Charmaine’s standing which is significantly higher on the negative table. According to the comments this is due to a plot twist in which she sparked the enragement of the audience after she lied about her pregnancy and baby daddy. The negative comments surrounding Jack are also about the baby-daddy scare. The negative comments about Brady stem from viewer belief that Brie is “too good” for Brady. The negative comments don’t necessarily reflect bad writing or acting, but, instead, the frustration and opinions of viewers about certain events and characters which retains viewer engagement.</p>
-      </div>
+<div className="max-w-5xl mx-auto w-full">
+  <p className="text-center text-lg mt-2 mb-8">From the <b>Virgin River: Season 4</b> subreddit, positive sentiment comments primarily emphasized the chemistry between characters Brie and Brady, as well as Mel and Jack. Additionally, they noted the frequent use of subjunctive mood verbs like &quot;I hope,&quot; &quot;I prefer,&quot; and &quot;I think,&quot; reflecting the speculative nature enabled by the show&apos;s continuity, which engages the audience. Conversely, negative sentiment comments often critiqued the perceived shortcomings in the relationship between Mel and Jack, along with expressing disapproval of the relationship between Brie and Mark. These negative remarks utilized verbs such as &quot;hate,&quot; &quot;stress,&quot; &quot;annoy,&quot; and &quot;irritate&quot; to convey dissatisfaction with certain character interactions, character development, and scenes.</p>
+  <div className="flex justify-center mb-8">
+    <div className="image-container" style={{ marginRight: '1rem' }}>
+      <p className="text-center font-bold">Negative</p>
+      <img src="/USA/virgin_nerneg.png" alt="Negative Sentiment" />
+    </div>
+    <div className="image-container" style={{ marginLeft: '1rem' }}>
+      <p className="text-center font-bold">Positive</p>
+      <img src="/USA/virgin_nerpos.png" alt="Positive Sentiment" />
+    </div>
+  </div>
+  <p className="text-center text-lg mt-2 mb-8">From the table we see a noticeable difference in the character Charmaine’s standing which is significantly higher on the negative table. According to the comments this is due to a plot twist in which she sparked the enragement of the audience after she lied about her pregnancy and baby daddy. The negative comments surrounding Jack are also about the baby-daddy scare. The negative comments about Brady stem from viewer belief that Brie is &quot;too good&quot; for Brady. The negative comments don’t necessarily reflect bad writing or acting, but, instead, the frustration and opinions of viewers about certain events and characters which retains viewer engagement.</p>
+</div>
 
-      <div className="max-w-5xl mx-auto w-full" style={{ borderTop: '2px dashed white', marginTop: '20px', marginBottom: '20px' }}></div>
+<div className="max-w-5xl mx-auto w-full" style={{ borderTop: '2px dashed white', marginTop: '20px', marginBottom: '20px' }}></div>
 
-      <div className="max-w-5xl mx-auto w-full">
-        <p className="text-center text-lg mt-2 mb-8">From the <b>You: Season 2</b> subreddit, we observed that comments with a positive sentiment score mainly highlighted their love for the character Love and the dynamic between Love and Joe. Their “partners in crime” relationship was compared to iconic duos such as <i>Bonnie & Clyde, Santa Clarita Diet, Gomex & Maria, and Mr. and Mrs. Smith.</i> Conversely, comments with negative sentiment scores focused less on specific dislikes about the show and more on the emotions evoked during particular scenes and character actions. Interestingly, these negative emotions, usually associated with unfavorable aspects, contribute to viewer engagement by immersing them in the complex emotional landscape of Joe's romantic life. Approximately 15% of the negative subreddit comments and 14% of the positive subreddit comments refer to both Joe and Love directly. After filtering out these comments in their respective sentiment categories, the following WordClouds were produced:</p>
-        <div className="flex justify-center mb-8">
-          <div className="image-container" style={{ marginRight: '1rem' }}>
-            <p className="text-center font-bold">Negative</p>
-            <img src="/USA/NLP_WC_JoeLove_neg_sentences_img.png" alt="Negative Sentiment" />
-          </div>
-          <div className="image-container" style={{ marginLeft: '1rem' }}>
-            <p className="text-center font-bold">Positive</p>
-            <img src="/USA/NLP_WC_JoeLove_sentences_img.png" alt="Positive Sentiment" />
-          </div>
-        </div>
-        <p className="text-center text-lg mt-2 mb-8">The WordClouds summarizing the positives of Joe and Love’s relationship indicate an audience liking towards the “dynamics” between Joe and Love which seem to involve “killing” and “chemistry” which contribute to the audience's emotions of entertainment, excitement, and interest. From the negative WordCloud visualizing Joe and Love’s relationship, we see that “killing” and subsequent “murders” is a source of discontent for the audience along with characters displaying “impulsiveness” and “craziness”. Because of the spoilers contained in the majority of comments, the analysis of You is missing specific details on what the audience favors about the plot. However, it can be generalized by the WordClouds produced.</p>
-      </div>
+<div className="max-w-5xl mx-auto w-full">
+  <p className="text-center text-lg mt-2 mb-8">From the <b>You: Season 2</b> subreddit, we observed that comments with a positive sentiment score mainly highlighted their love for the character Love and the dynamic between Love and Joe. Their “partners in crime” relationship was compared to iconic duos such as <i>Bonnie &amp; Clyde, Santa Clarita Diet, Gomex &amp; Maria, and Mr. and Mrs. Smith.</i> Conversely, comments with negative sentiment scores focused less on specific dislikes about the show and more on the emotions evoked during particular scenes and character actions. Interestingly, these negative emotions, usually associated with unfavorable aspects, contribute to viewer engagement by immersing them in the complex emotional landscape of Joe&apos;s romantic life. Approximately 15% of the negative subreddit comments and 14% of the positive subreddit comments refer to both Joe and Love directly. After filtering out these comments in their respective sentiment categories, the following WordClouds were produced:</p>
+  <div className="flex justify-center mb-8">
+    <div className="image-container" style={{ marginRight: '1rem' }}>
+      <p className="text-center font-bold">Negative</p>
+      <img src="/USA/NLP_WC_JoeLove_neg_sentences_img.png" alt="Negative Sentiment" />
+    </div>
+    <div className="image-container" style={{ marginLeft: '1rem' }}>
+      <p className="text-center font-bold">Positive</p>
+      <img src="/USA/NLP_WC_JoeLove_sentences_img.png" alt="Positive Sentiment" />
+    </div>
+  </div>
+  <p className="text-center text-lg mt-2 mb-8">The WordClouds summarizing the positives of Joe and Love’s relationship indicate an audience liking towards the “dynamics” between Joe and Love which seem to involve “killing” and “chemistry” which contribute to the audience&apos;s emotions of entertainment, excitement, and interest. From the negative WordCloud visualizing Joe and Love’s relationship, we see that “killing” and subsequent “murders” is a source of discontent for the audience along with characters displaying “impulsiveness” and “craziness”. Because of the spoilers contained in the majority of comments, the analysis of You is missing specific details on what the audience favors about the plot. However, it can be generalized by the WordClouds produced.</p>
+</div>
 
-      <div className="max-w-5xl mx-auto w-full" style={{ borderTop: '2px dashed white', marginTop: '20px', marginBottom: '20px' }}></div>
+<div className="max-w-5xl mx-auto w-full" style={{ borderTop: '2px dashed white', marginTop: '20px', marginBottom: '20px' }}></div>
 
-      <div className="max-w-5xl mx-auto w-full">
-        <p className="text-center text-lg mt-2 mb-8">Overall, the success of these popular romance shows in the USA can be attributed to a combination of compelling character dynamics, faithful adaptation from source material, and the ability to evoke strong emotions, both positive and negative, among viewers. These elements collectively contribute to the shows' widespread appeal and sustained popularity within the romance genre. It&apos;s worth noting that there is a higher frequency of negative sentiment across all shows, which reflects the depth of discussion and diverse thoughts generated by the narratives. This doesn&apos;t necessarily imply that the shows are bad; rather, it indicates the complexity of themes and character interactions, sparking engaging discourse among the audience.</p>
-      </div>
+<div className="max-w-5xl mx-auto w-full">
+  <p className="text-center text-lg mt-2 mb-8">Overall, the success of these popular romance shows in the USA can be attributed to a combination of compelling character dynamics, faithful adaptation from source material, and the ability to evoke strong emotions, both positive and negative, among viewers. These elements collectively contribute to the shows&apos; widespread appeal and sustained popularity within the romance genre. It&apos;s worth noting that there is a higher frequency of negative sentiment across all shows, which reflects the depth of discussion and diverse thoughts generated by the narratives. This doesn&apos;t necessarily imply that the shows are bad; rather, it indicates the complexity of themes and character interactions, sparking engaging discourse among the audience.</p>
+</div>
 
-      <div className="max-w-5xl w-full">
-        <div className="flex justify-center mb-8">
-          <img src="/USA/USA_sentiment_split.png" alt="Sentiment Split" />
-        </div>
-      </div>
+<div className="max-w-5xl w-full">
+  <div className="flex justify-center mb-8">
+    <img src="/USA/USA_sentiment_split.png" alt="Sentiment Split" />
+  </div>
+</div>
 
-      <div className="flex flex-col items-center mb-8 mt-5">
-        <Link href="/uae"> {/* Wrap with Link component */}
-          <ChevronsDown size={72} />
-        </Link>
-      </div>
+<div className="flex flex-col items-center mb-8 mt-5">
+  <Link href="/uae"> {/* Wrap with Link component */}
+    <ChevronsDown size={72} />
+  </Link>
+</div>
+
     </main>
   );
 }
