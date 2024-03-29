@@ -25,3 +25,22 @@ body {
         text-wrap: balance;
     }
 }
+
+
+/* Add CSS for image enlargement effect */
+
+.enlarge-on-hover {
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover .enlarge-on-hover {
+    transform: scale(2);
+    /* Scale the image to 1.5 times its original size */
+}
+
+@media (max-width: 768px) {
+    .image-container:hover .enlarge-on-hover {
+        transform: scale(1.2);
+        /* For smaller screens, scale the image to 1.2 times its original size */
+    }
+}

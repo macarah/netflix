@@ -46,7 +46,7 @@ const data = {
   // Add more countries and images as needed
 };
 
-export default function Comedy() {
+export default function Overview() {
   // State variables to track hovered image and its synopsis
   const [hoveredImage, setHoveredImage] = useState(null);
   const [synopsis, setSynopsis] = useState('');
@@ -128,7 +128,7 @@ export default function Comedy() {
       </div>
 
       <div className="flex flex-col items-center mb-8 mt-5">
-        <Link href="/comedy"> {/* Wrap with Link component */}
+        <Link href="/usa"> {/* Wrap with Link component */}
             <ChevronsDown size={72} />
         </Link>
       </div>
