@@ -64,7 +64,7 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col items-center mb-8 mt-5">
-        <Link href="/overview"> {/* Wrap with Link component */}
+        <Link href="/methods"> {/* Wrap with Link component */}
             <ChevronsDown size={72} />
         </Link>
       </div>
