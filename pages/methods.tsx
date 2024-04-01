@@ -26,7 +26,7 @@ export default function Overview() {
       </div>
       <div className="flex items-center justify-center mb-8 text-sm lg:flex">
         <img src="/netflix_tv.jpeg" alt="Netflix Logo" className="w-full max-w-lg" /> {/* Adjust the width as needed */}
-        <p className="text-lg">Netflix, Inc. is an American over-the-top content platform and production company headquartered in Los Gatos, California. Netflix was founded in 1997 by Reed Hastings and Marc Randolph in Scotts Valley, California. The company's primary business is a subscription-based streaming service offering online streaming from a library of films and television series, including those produced in-house.</p>
+        <p className="text-lg">Netflix, Inc. is an American over-the-top content platform and production company headquartered in Los Gatos, California. Netflix was founded in 1997 by Reed Hastings and Marc Randolph in Scotts Valley, California. The company&apos;s primary business is a subscription-based streaming service offering online streaming from a library of films and television series, including those produced in-house.</p>
       </div>
 
       <div className="mb-4 mt-10 flex flex-col items-center">
