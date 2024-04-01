@@ -32,7 +32,7 @@ export default function Germany() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
      <div className="fixed top-0 left-0 z-50 p-4">
-        <Link href="/uae">
+        <Link href="/usa">
           <div className="flex items-center">
             <ArrowLeft size={24} />
             <span className="ml-2">Back</span>

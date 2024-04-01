@@ -13,12 +13,12 @@ const data = {
     { src: '/USA/You.jpeg', alt: 'Image 3', synopsis: 'A dangerously charming, intensely obsessive young man goes to extreme measures to insert himself into the lives of those he is transfixed by.' },
     // Add more images as needed
   ],
-  'United Arab Emirates': [ 
+  /*'United Arab Emirates': [ 
     { src: '/UAE/alchemy.jpg', alt: 'Image 1', synopsis: "A powerful sorceress in a blind woman's body encounters a man from a prestigious family, who wants her help to change his destiny." },
     { src: '/UAE/business.jpg', alt: 'Image 2', synopsis: 'In disguise as her friend, Ha-ri shows up to a blind date to scare him away. But plans go awry when he turns out to be her CEO — and makes a proposal.' },
     { src: '/UAE/hometown.png', alt: 'Image 3', synopsis: 'A big-city dentist opens up a practice in a close-knit seaside village, home to a charming jack-of-all-trades who is her polar opposite in every way.' },
     // Add more images as needed
-  ],
+  ],*/
   Germany: [ 
     { src: '/Germany/betty.jpg', alt: 'Image 1', synopsis: "Beatriz Aurora Rincon Lozano, a young climber, takes a job at V&M Fashion as secretary to the company president." },
     { src: '/Germany/Bridgerton.jpeg', alt: 'Image 2', synopsis: "The eight close-knit siblings of the Bridgerton family look for love and happiness in London high society. Inspired by Julia Quinn's bestselling novels."},
@@ -31,12 +31,12 @@ const data = {
     { src: '/Japan/king.webp', alt: 'Image 3', synopsis: "When the crown prince is killed, his twin sister assumes the throne while trying to keep her identity and affection for her first love a royal secret." },
     // Add more images as needed
   ],
-  Kenya: [ 
+  /*Kenya: [ 
     { src: '/Kenya/Bridgerton.jpeg', alt: 'Image 1', synopsis: "The eight close-knit siblings of the Bridgerton family look for love and happiness in London high society. Inspired by Julia Quinn's bestselling novels." },
     { src: '/Kenya/marked.jpeg', alt: 'Image 2', synopsis: "A man hell-bent on exacting revenge on the organ trafficking organization that murdered his wife becomes involved with the woman who received her heart." },
     { src: '/Kenya/sex.jpg', alt: 'Image 3', synopsis: "A woman's daring sexual past collides with her married-with-kids present when the bad-boy ex she can't stop fantasizing about crashes back into her life." },
     // Add more images as needed
-  ],
+  ],*/
   Mexico: [ 
     { src: '/Mexico/betty.webp', alt: 'Image 1', synopsis: "An aspiring writer works her way up the ladder at a fashion magazine, despite her questionable wardrobe choices and doubting coworkers." },
     { src: '/Mexico/reina.jpg', alt: 'Image 2', synopsis: "After years of blood, sweat and tears, a woman from humble beginnings finds herself in the perilous position of being a legend in drug trafficking." },
