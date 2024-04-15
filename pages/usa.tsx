@@ -112,7 +112,7 @@ export default function USA() {
       <img src="/USA/virgin_nerpos.png" alt="Positive Sentiment" />
     </div>
   </div>
-  <p className="text-center text-lg mt-2 mb-8">From the table we see a noticeable difference in the character Charmaine’s standing which is significantly higher on the negative table. According to the comments this is due to a plot twist in which she sparked the enragement of the audience after she lied about her pregnancy and baby daddy. The negative comments surrounding Jack are also about the baby-daddy scare. The negative comments about Brady stem from viewer belief that Brie is &quot;too good&quot; for Brady. The negative comments don’t necessarily reflect bad writing or acting, but, instead, the frustration and opinions of viewers about certain events and characters which retains viewer engagement.</p>
+  <p className="text-center text-lg mt-2 mb-8">From the table we see a noticeable difference in the character Charmaine&apos;s standing which is significantly higher on the negative table. According to the comments this is due to a plot twist in which she sparked the enragement of the audience after she lied about her pregnancy and baby daddy. The negative comments surrounding Jack are also about the baby-daddy scare. The negative comments about Brady stem from viewer belief that Brie is &quot;too good&quot; for Brady. The negative comments don’t necessarily reflect bad writing or acting, but, instead, the frustration and opinions of viewers about certain events and characters which retains viewer engagement.</p>
 </div>
 
 <div className="max-w-5xl mx-auto w-full" style={{ borderTop: '2px dashed white', marginTop: '20px', marginBottom: '20px' }}></div>

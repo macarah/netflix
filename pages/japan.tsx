@@ -82,14 +82,37 @@ export default function Japan() {
       ))}
     </div>
       <div className="max-w-5xl w-full">
-        <p className="text-center text-lg mt-10 mb-8">After determining the top 20 Netflix shows for the countries listed below based on their respective cumulative weeks in the Netflix Top Ten list, the 3 most popular romance shows for each of the following countries were extracted:</p>
-        <p className="text-center text-lg mt-2 mb-8">***by hovering over images, you can read a synopsis for each show.</p>
+        <p className="text-center text-lg mt-10 mb-8">The following data was collected for the top 3 Netflix romance television series in Japan:</p>
+        <div className="bulleted-list mt-2 mb-8">
+          <ul>
+            <li>For the show The King&apos;s Affection, 65 tweets were scraped from the Twitter query, 연모 or Yeonmo, and translated from Japanese/Korean to English using Google Translate.</li>
+            <li>For the show Crash Landing on You, 109 tweets were scraped from the Twitter query, 愛の不時着, and translated from Japanese to English.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="flex justify-center mb-8">
+        <div className="image-container" style={{ marginRight: '2rem', marginLeft: '2rem' }}>
+          <p className="text-center font-bold">The King&apos;s Affection: NER</p>
+          <img src="/Japan/ner_kings.png" alt="Negative Sentiment" style={{ maxWidth: '400px' }} />
+        </div>
+        <div className="image-container" style={{ marginRight: '2rem', marginLeft: '2rem' }}>
+          <p className="text-center font-bold">Crash Landing on You: NER</p>
+          <img src="/Japan/ner_crash.png" alt="Positive Sentiment" style={{ maxWidth: '400px' }} />
+        </div>
       </div>
 
       <div className="max-w-5xl w-full">
-        <p className="text-center text-lg mt-10 mb-8">Simple analysis of the show synopsis and hypothesis of why certain feature might be appealing based on them</p>
+        <p className="text-center text-lg mt-5 mb-8">From the BERT NER analysis we see that the fans of the most popular romance television series fawn over the actor/actress rather than the character they play in the series. The main character of The King&apos;s Affection is the Crown Prince Lee Hwi who is played by Park Eun Bin. In the comments with positive sentiment, there were a total of 6 references to Lee Hwi. In contrast, Park Eun Bin was the most mentioned person in the positively scored tweets with a total of 30 references. This trend was also seen for the second most mentioned actor, Rowoon, who starred as Jung Ji Woon in The King&apos;s Affection. We see the special attention of Netflix Japan viewers on the actors and actresses over the characters they play in the series Crash Landing on You as well. This trend highlights the special attention given by Netflix Japan viewers to the actors and actresses rather than the characters they portray, reflecting the loyal fandom culture prevalent in K-pop and K-drama communities, where fans often form strong emotional connections with their favorite performers. This loyal fandom culture extends beyond mere appreciation for their on-screen talents; it encompasses a sense of personal connection and investment in the lives and careers of these artists. By prioritizing the recognition and support of the individuals who bring these characters to life, Netflix Japan viewers contribute to the thriving ecosystem of fan-driven enthusiasm and engagement within the entertainment industry.</p>
       </div>
 
+      <div className="max-w-5xl w-full">
+        <p className="text-center font-bold">Sentiment Analysis</p>
+        <img src="/Japan/sentiment bar.png" alt="Sentiment" />
+        <p className="text-center text-lg mt-5 mb-8">Additionally, we see that the Twitter comments from the Japanese viewers have a significantly higher positive sentiment than negative and neutral. The positive sentiment is unlike what was previously seen in USA subreddits for the most popular romance shows. This can be attributed to cultural differences between Japan and USA viewers. While viewers in the USA enjoy focusing on the plot of the romance shows and participate in heated discussions and predict what will happen in the next season, viewers in Japan tend to show their support and adoration for the cast, director, and crew through their tweets.</p>
+        <p className="text-center text-lg mt-5 mb-8">Because of the lack of online discussions available for the show The Apothecary Diaries, we were unable to extract substantial data to analyze the reactions and opinions of Netflix Japan viewers.</p>
+      </div>
+      
       <div className="flex flex-col items-center mb-8 mt-5">
         <Link href="/mexico"> {/* Wrap with Link component */}
             <ChevronsDown size={72} />
