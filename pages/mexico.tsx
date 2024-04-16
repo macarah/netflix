@@ -82,9 +82,16 @@ export default function Mexico() {
       ))}
     </div>
       <div className="max-w-5xl w-full">
-        <p className="text-center text-lg mt-10 mb-8">After determining the top 20 Netflix shows for the countries listed below based on their respective cumulative weeks in the Netflix Top Ten list, the 3 most popular romance shows for each of the following countries were extracted:</p>
-        <p className="text-center text-lg mt-2 mb-8">***by hovering over images, you can read a synopsis for each show.</p>
+      <p className="text-center text-lg mt-10 mb-8">The following data was collected for the top 3 Netflix romance television series in Mexico:</p>
       </div>
+      <div>
+        <ul>
+          <li style={{ marginBottom: '0.5rem' }}>* 497 Facebook comments scraped from the <a href="https://www.facebook.com/photo/?fbid=804137125080345&set=a.451158170378244" target="_blank" rel="noopener"><span style={{ color: 'blue' }}>Hasta Que La Plata Nos Separe</span></a> post by the page "Tlnovelas Fans” which has 2.4 million followers and Spanish as the primary language.</li>
+          <li style={{ marginBottom: '0.5rem' }}>* 624 Facebook comments scraped from the <a href="https://fb.watch/rhNrbKoC_h/" target="_blank" rel="noopener"><span style={{ color: 'blue' }}>La Reina del Sur</span></a> post by the page “Muy Netflix” which has 5.5 million followers and Spanish as the primary language.</li>
+          <li style={{ marginBottom: '0.5rem' }}>* Yo Soy Betty la Fea has many remakes all over the world based on the original Colombian telenovela. Yo Soy Betty la Fea premiered in Mexico on Netflix and is popular in Honduras as well. Because there are multiple versions of Betty la Fea, there is limited data in discussions about the Mexican version of the show beyond that of comparisons to the Colombian version by, predominantly, South Americans.</li>
+        </ul>
+      </div>
+
 
       <div className="max-w-5xl w-full">
         <p className="text-center text-lg mt-10 mb-8">Simple analysis of the show synopsis and hypothesis of why certain feature might be appealing based on them</p>
