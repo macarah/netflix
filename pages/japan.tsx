@@ -91,6 +91,9 @@ export default function Japan() {
         </div>
       </div>
 
+      <div className="max-w-5xl mx-auto w-full" style={{ borderTop: '2px dashed white', marginTop: '20px', marginBottom: '20px' }}></div>
+
+
       <div className="flex justify-center mb-8">
         <div className="image-container" style={{ marginRight: '2rem', marginLeft: '2rem' }}>
           <p className="text-center font-bold">The King&apos;s Affection: NER</p>

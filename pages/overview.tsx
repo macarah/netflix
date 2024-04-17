@@ -80,7 +80,7 @@ export default function Overview() {
       </div>
       <div className="max-w-5xl w-full">
         <p className="text-center text-lg mt-10 mb-8">After determining the top 20 Netflix shows for the countries listed below based on their respective cumulative weeks in the Netflix Top Ten list, the 3 most popular romance shows for each of the following countries were extracted:</p>
-        <p className="text-center text-lg mt-10 mb-8">***by hovering over images, you can read a synopsis for each show.</p>
+        <p className="text-center text-lg mt-10 mb-8">***by hovering over images, you can read a Netflix synopsis for each show.</p>
       </div>
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', minHeight: '100vh' }}>
       {Object.entries(data).map(([country, images]) => (
@@ -124,7 +124,9 @@ export default function Overview() {
       </div>
 
       <div className="max-w-5xl w-full">
-        <p className="text-center text-lg mt-10 mb-8">Simple analysis of the show synopsis and hypothesis of why certain feature might be appealing based on them</p>
+        <p className="text-center text-lg mt-10 mb-8">From the Netflix covers of romance shows, distinct patterns emerge across popular series from the United States, Germany, Mexico, and Japan. Notably, the eurocentric influence and diversity of the United States and Germany are evident, with predominantly European or White characters featured on their covers. In Japan, Korean dramas and Japanese anime dominate the romance genre, while Mexican telenovelas prominently feature Latino actors and actresses.</p>
+        <p className="text-center text-lg mt-10 mb-8">Moreover, differences in plot themes are apparent from Netflix synopses across these countries. Particularly striking is the focus in Mexico, where all three romance shows highlight the strength and determination of female protagonists. In contrast, romance series popular in Japan often depict female protagonists navigating unexpected challenges, seeking support from male counterparts. This dynamic is mirrored in the cover art, where women are often depicted either gazing at the male lead or with a demure, shy expression, looking away.</p>
+        <p className="text-center text-lg mt-10 mb-8">Based on the observations gleaned from Netflix covers and synopses of romance shows across different countries, a hypothesis emerges regarding audience preferences. It appears that audience tastes in romance programming on Netflix may be influenced by a combination of cultural factors, societal norms, and narrative themes unique to each country. In countries like the United States and Germany, where eurocentric influences prevail and diversity is prominent, audiences may favor shows featuring predominantly European or White characters. Conversely, in Japan, the popularity of Korean dramas and anime suggests a preference for East Asian cultural imports, while Mexican audiences may be drawn to shows that emphasize strong, independent female protagonists—a reflection, perhaps, of evolving gender norms and empowerment. The differing portrayal of female characters across regions—from assertive in Mexico to more submissive in Japan—indicates that traditional gender roles and expectations may also shape audience preferences. Ultimately, further research is needed to unravel the nuanced interplay of these cultural, societal, and narrative factors in shaping audience tastes in Netflix romance programming.</p>
       </div>
 
       <div className="flex flex-col items-center mb-8 mt-5">

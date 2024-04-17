@@ -7,7 +7,7 @@ import '/app/globals.css';
 
 const data = {
   'United States of America': [
-    { src: '/USA/Bridgerton.jpeg', alt: 'Image 1', synopsis: "The eight close-knit siblings of the Bridgerton family look for love and happiness in London high society. Inspired by Julia Quinn&apos;s bestselling novels."},
+    { src: '/USA/Bridgerton.jpeg', alt: 'Image 1', synopsis: "The eight close-knit siblings of the Bridgerton family look for love and happiness in London high society. Inspired by Julia Quinn's bestselling novels."},
     { src: '/USA/virgin.jpg', alt: 'Image 2', synopsis: 'Searching for a fresh start, a nurse practitioner moves from LA to a remote northern California town and is surprised by what — and who — she finds.' },
     { src: '/USA/You.jpeg', alt: 'Image 3', synopsis: 'A dangerously charming, intensely obsessive young man goes to extreme measures to insert himself into the lives of those he is transfixed by.' },
   ]
