@@ -149,7 +149,7 @@ export default function Mexico() {
         </div> 
       </div>
       <p className="text-center text-lg mt-10 mb-8">
-        Examining the Word Cloud, it&apos;s apparent that viewers of &quot;La Reina del Sur&quot; are drawn to narrative elements involving themes of &quot;killing,&quot; &quot;betrayal,&quot; and &quot;death.&quot; This indicates an appreciation for the dramatic tension and high stakes inherent in the storyline, suggesting that viewers are captivated by the intricate web of intrigue and danger that surrounds Tereza Mendoza's journey.
+        Examining the Word Cloud, it&apos;s apparent that viewers of &quot;La Reina del Sur&quot; are drawn to narrative elements involving themes of &quot;killing,&quot; &quot;betrayal,&quot; and &quot;death.&quot; This indicates an appreciation for the dramatic tension and high stakes inherent in the storyline, suggesting that viewers are captivated by the intricate web of intrigue and danger that surrounds Tereza Mendoza&apos;s journey.
       </p>
 
       <div className="max-w-5xl mx-auto w-full" style={{ borderTop: '2px dashed white', marginTop: '20px', marginBottom: '20px' }}></div>
@@ -159,7 +159,7 @@ export default function Mexico() {
           <h1 className="text-center font-bold mb-5">Conclusion:</h1>
           <img src="/Mexico/bert.png" alt="POS cloud reina" />
           <p className="text-center text-lg mt-10 mb-8">
-          In conclusion, the analysis indicates a notably higher frequency of positive comments compared to negative ones among Latino viewers of Netflix-Mexico&apos;s most popular romance shows. This trend underscores a viewer culture that strongly embraces and celebrates television series production. Moreover, there is a discernible shift in focus away from the love interests and actors who held significant roles in series previously viewed by audiences in the USA and Japan. Instead, despite the genre being romance, Mexican Netflix viewers exhibit a preference for the plot's comical and dramatic elements. These characteristics align closely with the tropes often found in telenovelas popular across Latin America.
+          In conclusion, the analysis indicates a notably higher frequency of positive comments compared to negative ones among Latino viewers of Netflix-Mexico&apos;s most popular romance shows. This trend underscores a viewer culture that strongly embraces and celebrates television series production. Moreover, there is a discernible shift in focus away from the love interests and actors who held significant roles in series previously viewed by audiences in the USA and Japan. Instead, despite the genre being romance, Mexican Netflix viewers exhibit a preference for the plot&apos;s comical and dramatic elements. These characteristics align closely with the tropes often found in telenovelas popular across Latin America.
           </p>
         </div>
 
