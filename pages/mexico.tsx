@@ -92,9 +92,79 @@ export default function Mexico() {
         </ul>
       </div>
 
+      <div className="max-w-5xl mx-auto w-full" style={{ borderTop: '2px dashed white', marginTop: '20px', marginBottom: '20px' }}></div>
 
       <div className="max-w-5xl w-full">
-        <p className="text-center text-lg mt-10 mb-8">Simple analysis of the show synopsis and hypothesis of why certain feature might be appealing based on them</p>
+      <h1 className='text-center text-lg mt-10 mb-8 font-bold'>Hasta Que la Plata Nos Separe</h1>
+
+        <p className="text-center text-lg mt-10 mb-8">
+          The analysis of comments on the Facebook post regarding the show &quot;Hasta Que La Plata Nos Separe&quot; reveals a predominantly positive sentiment, with viewers expressing enjoyment and engagement particularly with the comedic aspects of the show. Based on the Word Cloud, adjectives like &quot;funny,&quot; &quot;fun,&quot; &quot;laugh,&quot; and &quot;entertaining&quot; are frequently used, indicating a strong appreciation for the humor within the series.
+        </p>
+      <div className="flex justify-center mt-8 mb-8">
+        <div className="image-container" style={{ marginRight: '1rem', maxWidth: 500 }}>
+          <p className="text-center font-bold mb-5">POS Tagged Word Cloud for Positive Comments</p>
+          <img src="/Mexico/NLP_WC_laPlata_positive_sentences_img.png" alt="POS cloud plata" />
+        </div>
+      </div>
+        <p className="text-center text-lg mt-10 mb-8">
+          However, there appears to be a lack of focus on the specific characters and actors, as evidenced by the BERT NER analysis. While Pedro Fernandez, known for his role in a previous version of the show, garners attention due to his prior popularity as a Mexican singer, songwriter, and actor, there is relatively less discussion about the current lead actors such as Sebastián Martínez and Carmen Villalobos, who portray Rafael Méndez and Alejandra Maldonado respectively.
+        </p>
+        <div className="flex justify-center mt-8 mb-8">
+        <div className="image-container" style={{ marginLeft: '1rem', maxWidth: 500 }}>
+          <p className="text-center font-bold mb-5">NER Filtered by Person for Positive Comments</p>
+          <img src="/Mexico/plata_ner.png" alt="Positive Sentiment" />
+        </div> 
+      </div>
+        <p className="text-center text-lg mt-10 mb-8">
+          This suggests that while the audience retains familiarity with certain key figures from previous iterations of the show, their attention may not be as strongly directed towards the current cast and character dynamics. Nevertheless, the overall sentiment towards the show remains positive, driven by its comedic elements and engaging storyline.
+        </p>
+
+      </div>
+
+      <div className="max-w-5xl mx-auto w-full" style={{ borderTop: '2px dashed white', marginTop: '20px', marginBottom: '20px' }}></div>
+
+      <div className="max-w-5xl w-full">
+        <h1 className='text-center text-lg mt-10 mb-8 font-bold'>La Reina del Sur</h1>
+      <div className="flex justify-center mt-8 mb-8">
+        <div className="image-container" style={{ marginRight: '1rem', maxWidth: 500 }}>
+          <p className="text-center font-bold mb-5">POS Tagged Word Cloud for Positive Comments</p>
+          <img src="/Mexico/reina_ner.png" alt="POS cloud reina" />
+        </div>
+      </div>
+        <p className="text-center text-lg mt-10 mb-8">
+        The affection directed towards the female protagonist, both the actress Kate del Castillo and her character Tereza Mendoza, is palpable, with descriptors like &quot;strong&quot; and &quot;beautiful&quot; frequently used to portray Tereza. This admiration stems from the narrative&apos;s focus on Tereza&apos;s ascent from a young woman in Mexico to the formidable drug lord reigning over southern Spain. The audience&apos;s appreciation for Tereza&apos;s strength and resilience as a central figure in the romantic storyline is evident.        </p>
+        <div className="flex justify-center mt-8 mb-8">
+        <div className="image-container" style={{ marginLeft: '1rem', maxWidth: 500 }}>
+          <p className="text-center font-bold mb-5">NER Filtered by Person for Positive Comments</p>
+          <img src="/Mexico/el_pote.png" alt="Positive Sentiment" />
+        </div> 
+      </div>
+        <p className="text-center text-lg mt-10 mb-8">
+          Furthermore, there&apos;s a notable presence of references to &quot;El Pote&quot; in both the NER analysis and n-grams. Upon further Google investigation into &quot;El Pote y Tereza,&quot; fan discussions underscore the profound love and unwavering loyalty El Pote harbors for Tereza, positioning him as a trusted friend in her eyes. The unexpected popularity of El Pote among viewers is intriguing, especially considering that Teresa&apos;s romantic interest in the series lies with James, who receives very little mention in the comments.
+        </p>
+        <div className="flex justify-center mt-8 mb-8">
+        <div className="image-container" style={{ marginLeft: '1rem', maxWidth: 500 }}>
+          <p className="text-center font-bold mb-5">NER Filtered by Person for Positive Comments</p>
+          <img src="/Mexico/NLP_WC_laReina_positive_sentences_img.png" alt="Positive Sentiment" />
+        </div> 
+      </div>
+      <p className="text-center text-lg mt-10 mb-8">
+        Examining the Word Cloud, it&apos;s apparent that viewers of &quot;La Reina del Sur&quot; are drawn to narrative elements involving themes of &quot;killing,&quot; &quot;betrayal,&quot; and &quot;death.&quot; This indicates an appreciation for the dramatic tension and high stakes inherent in the storyline, suggesting that viewers are captivated by the intricate web of intrigue and danger that surrounds Tereza Mendoza's journey.
+      </p>
+
+      <div className="max-w-5xl mx-auto w-full" style={{ borderTop: '2px dashed white', marginTop: '20px', marginBottom: '20px' }}></div>
+      
+      <div className="flex justify-center mt-8 mb-8">
+        <div className="image-container" style={{ marginRight: '1rem', maxWidth: 700 }}>
+          <h1 className="text-center font-bold mb-5">Conclusion:</h1>
+          <img src="/Mexico/bert.png" alt="POS cloud reina" />
+          <p className="text-center text-lg mt-10 mb-8">
+          In conclusion, the analysis indicates a notably higher frequency of positive comments compared to negative ones among Latino viewers of Netflix-Mexico&apos;s most popular romance shows. This trend underscores a viewer culture that strongly embraces and celebrates television series production. Moreover, there is a discernible shift in focus away from the love interests and actors who held significant roles in series previously viewed by audiences in the USA and Japan. Instead, despite the genre being romance, Mexican Netflix viewers exhibit a preference for the plot's comical and dramatic elements. These characteristics align closely with the tropes often found in telenovelas popular across Latin America.
+          </p>
+        </div>
+
+      </div>
+
       </div>
 
       <div className="flex flex-col items-center mb-8 mt-5">
