@@ -76,7 +76,7 @@ export default function Overview() {
           <h2 className="font-semibold text-lg mb-8">To analyze unfiltered audience opinions and thoughts about the shows, data was collected from popular social media platforms in each country. Specifically:</h2>
           <ul className="list-disc">
             <li>For the United States, data was scraped from the online discussion platform Reddit.</li>
-            <li>For Germany, data was scraped from Facebook groups and accounts specifically targeting users in Germany.</li>
+            <li>For Germany, data was scraped from popular German online discussion forums.</li>
             <li>For Japan, data was scraped from Twitter users who write posts in Japanese.</li>
             <li>For Mexico, data was scraped from Facebook groups and users who write posts and comments in Spanish.</li>
           </ul>
