@@ -168,7 +168,7 @@ export default function Mexico() {
       </div>
 
       <div className="flex flex-col items-center mb-8 mt-5">
-        <Link href="/"> {/* Wrap with Link component */}
+        <Link href="/conclusion"> {/* Wrap with Link component */}
             <ChevronsDown size={72} />
         </Link>
       </div>

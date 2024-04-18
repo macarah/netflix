@@ -64,7 +64,7 @@ export default function Overview() {
       {/* Div 4 */}
       <div className={`transition-opacity duration-500 ${activeDiv === 3 ? 'opacity-100' : 'opacity-0 hidden'}`}>
         <div className="mb-4 mt-10 flex flex-col items-center">
-          <h2 className="font-semibold text-lg mb-8">From the selected 4 countries, the 20 most popular Netflix shows were determined by ranking TV shows based on their cumulative weeks in the Netflix Top 10 from lists published between June 28, 2021 and June 20, 2023. From the rankings, the top three romance shows for each country was extracted:</h2>
+          <h2 className="font-semibold text-lg mb-8">From the selected 4 countries, the 20 most popular Netflix shows were determined by ranking TV shows based on their cumulative weeks in the Netflix Top 10 from lists published between June 28, 2021 and June 20, 2023. From the rankings, the top three romance shows for each country were extracted:</h2>
           <img src="/cum_weeks_netflix.png" alt="Netflix Analysis" className="w-full max-w-700" />
           <p className="text-center mt-5">Data from Netflix: <a href="https://www.netflix.com/tudum/top10/" target="_blank" rel="noopener noreferrer" style={{ color: 'blue' }}>https://www.netflix.com/tudum/top10/</a></p>
         </div>
