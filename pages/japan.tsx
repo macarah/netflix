@@ -81,15 +81,15 @@ export default function Japan() {
         </div>
       ))}
     </div>
-      <div className="max-w-5xl w-full">
-        <p className="text-center text-lg mt-10 mb-8">The following data was collected for the top 3 Netflix romance television series in Japan:</p>
-        <div className="bulleted-list mt-2 mb-8">
-          <ul>
-            <li>For the show The King&apos;s Affection, 65 tweets were scraped from the Twitter query, 연모 or Yeonmo, and translated from Japanese/Korean to English using Google Translate.</li>
-            <li>For the show Crash Landing on You, 109 tweets were scraped from the Twitter query, 愛の不時着, and translated from Japanese to English.</li>
-          </ul>
-        </div>
+    <div className="max-w-5xl w-full">
+      <p className="text-center text-lg mt-10 mb-8">The following data was collected for the top 3 Netflix romance television series in Japan:</p>
+      <div className="bulleted-list mt-2 mb-8">
+        <ul>
+          <li>For the show The King&apos;s Affection, 65 tweets were scraped from the Twitter query, <a href="https://twitter.com/search?q=%EC%97%B0%EB%AA%A8&src=typed_query&f=top" className="text-blue-500">연모 or Yeonmo</a>, and translated from Japanese/Korean to English using Google Translate.</li>
+          <li>For the show Crash Landing on You, 109 tweets were scraped from the Twitter query, <a href="https://twitter.com/search?q=%E6%84%9B%E3%81%AE%E4%B8%8D%E6%99%82%E7%9D%80&src=typed_query" className="text-blue-500">愛の不時着</a>, and translated from Japanese to English.</li>
+        </ul>
       </div>
+    </div>
 
       <div className="max-w-5xl mx-auto w-full" style={{ borderTop: '2px dashed white', marginTop: '20px', marginBottom: '20px' }}></div>
 
