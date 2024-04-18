@@ -83,6 +83,20 @@ export default function USA() {
         ))}
       </div>
 
+      <div className="max-w-5xl w-full">
+        <p className="text-center text-lg mt-10 mb-8">The following data was collected for the top 3 Netflix romance television series in The United State:</p>
+        </div>
+        <div>
+          <ul>
+            <li style={{ marginBottom: '0.5rem' }}>* 414 Reddit comments scraped from the subreddit of <a href="https://www.reddit.com/r/BridgertonNetflix/comments/tnfteg/bridgerton_season_2_postseason_discussion_book/" target="_blank" rel="noopener"><span style={{ color: 'blue' }}>Bridgerton--Season 2--Post-Season Discussion</span></a>.</li>
+            <li style={{ marginBottom: '0.5rem' }}>* 600 Reddit comments scraped from the subreddit of <a href="https://www.reddit.com/r/YouOnLifetime/comments/q8i48y/you_season_3_overall_discussion_thread/" target="_blank" rel="noopener"><span style={{ color: 'blue' }}>You--Season 3 Overall Discussion</span></a>.</li>
+            <li style={{ marginBottom: '0.5rem' }}>* 293 Reddit comments scraped from the subreddit of <a href="https://www.reddit.com/r/VirginRiverNetflix/comments/w4erpr/season_4_episode_hub_overall_season_4_discussion/" target="_blank" rel="noopener"><span style={{ color: 'blue' }}>Virgin River--Season 4 Overall Discussion</span></a>.</li>
+          </ul>
+      </div>
+
+      <div className="max-w-5xl mx-auto w-full" style={{ borderTop: '2px dashed white', marginTop: '20px', marginBottom: '20px' }}></div>
+
+
       <div className="max-w-5xl mx-auto w-full">
   <p className="text-center text-lg mt-4 mb-8">From the <b>Bridgerton: Season 2</b> subreddit, we observed that comments with a positive sentiment score mainly highlighted the chemistry between characters Kate and Anthony, along with references to similarities between the show and the book. On the other hand, comments with a negative sentiment score often mentioned disparities between the show and the book, the presence of a love triangle, and the lack of a build up in the relationship between Kate and Anthony. The table below highlights the positive and negative comments that reference both Kate and Anthony:</p>
   <div className="flex justify-center mb-8">
