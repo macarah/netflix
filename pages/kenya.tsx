@@ -1,38 +1,19 @@
-import React, { useState } from 'react';
-import { ChevronsDown, type LucideIcon,
-} from "lucide-react"
-import { ArrowLeft } from 'lucide-react';
-import Link from 'next/link';
 import '/app/globals.css';
-const data = {
-    Kenya: [ 
-        { src: '/Kenya/Bridgerton.jpeg', alt: 'Image 1', synopsis: "The eight close-knit siblings of the Bridgerton family look for love and happiness in London high society. Inspired by Julia Quinn's bestselling novels." },
-        { src: '/Kenya/marked.jpeg', alt: 'Image 2', synopsis: "A man hell-bent on exacting revenge on the organ trafficking organization that murdered his wife becomes involved with the woman who received her heart." },
-        { src: '/Kenya/sex.jpg', alt: 'Image 3', synopsis: "A woman's daring sexual past collides with her married-with-kids present when the bad-boy ex she can't stop fantasizing about crashes back into her life." },
-        // Add more images as needed
-      ]}
+import React, { useState } from 'react';
+import { ArrowLeft, ChevronsDown } from 'lucide-react';
+import Link from 'next/link';
 
-export default function Kenya() {
-    // State variables to track hovered image and its synopsis
-  const [hoveredImage, setHoveredImage] = useState(null);
-  const [synopsis, setSynopsis] = useState('');
+export default function Overview() {
+  const [activeDiv, setActiveDiv] = useState(0);
 
-  // Function to handle mouse enter event
-  const handleMouseEnter = (image: any, synopsis: any) => {
-    setHoveredImage(image);
-    setSynopsis(synopsis);
-  };
-
-  // Function to handle mouse leave event
-  const handleMouseLeave = () => {
-    setHoveredImage(null);
-    setSynopsis('');
+  const handleNext = () => {
+    setActiveDiv(activeDiv < 5 ? activeDiv + 1 : 0);
   };
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-     <div className="fixed top-0 left-0 z-50 p-4">
-        <Link href="/japan">
+      <div className="fixed top-0 left-0 z-50 p-4">
+        <Link href="/">
           <div className="flex items-center">
             <ArrowLeft size={24} />
             <span className="ml-2">Back</span>
@@ -40,61 +21,100 @@ export default function Kenya() {
         </Link>
       </div>
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-      <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Popular Romance Shows in Kenya
+        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
+          Methodology
         </p>
       </div>
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-      {Object.entries(data).map(([country, images]) => (
-        <div key={country} style={{ marginBottom: '1rem', maxWidth: '100%' }}>
-          <h2 className="font-bold text-lg mt-10 mb-8">{country}</h2>
-          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '1rem' }}>
-            {images.map((image, index) => (
-              <div key={index} style={{ flex: '0 0 calc(33.333% - 1rem)', position: 'relative' }}>
-                <div
-                  className="relative max-w-xs overflow-hidden bg-cover bg-no-repeat"
-                  onMouseEnter={() => handleMouseEnter(image.src, image.synopsis)}
-                  onMouseLeave={handleMouseLeave}
-                >
-                  <img
-                    src={image.src}
-                    className="max-w-xs"
-                    alt={image.alt}
-                    style={{ width: '100%', height: 'auto' }}
-                  />
-                  {hoveredImage === image.src && (
-                    <div className="mask" style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(0, 0, 0, 0.6)' }}>
-                      <div className="d-flex justify-content-center align-items-center h-100">
-                        <p className="text-white mb-0">{synopsis}</p>
-                      </div>
-                    </div>
-                  )}
-                  <div
-                    className={`absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-indigo-700 bg-fixed opacity-0 transition duration-300 ease-in-out ${
-                      hoveredImage === image.src ? 'hover:opacity-50' : 'hover:opacity-0'
-                    }`}
-                  ></div>
-                </div>
-              </div>
-            ))}
+
+      {/* Div 1 */}
+      <div className={`transition-opacity duration-500 ${activeDiv === 0 ? 'opacity-100' : 'opacity-0 hidden'}`}>
+        <div className="grid grid-cols-2 gap-8 mt-8">
+          <div className="flex items-center justify-center mb-8 text-sm lg:flex">
+            <img src="/netflix_tv.jpeg" alt="Netflix Logo" className="w-full max-w-lg" />
+          </div>
+          <div className="flex items-center justify-center mb-8 text-sm lg:flex">
+            <p className="text-lg">Netflix, Inc. is an American over-the-top content platform and production company headquartered in Los Gatos, California. Netflix was founded in 1997 by Reed Hastings and Marc Randolph in Scotts Valley, California. The company&apos;s primary business is a subscription-based streaming service offering online streaming from a library of films and television series, including those produced in-house.</p>
           </div>
         </div>
-      ))}
-    </div>
-      <div className="max-w-5xl w-full">
-        <p className="text-center text-lg mt-10 mb-8">After determining the top 20 Netflix shows for the countries listed below based on their respective cumulative weeks in the Netflix Top Ten list, the 3 most popular romance shows for each of the following countries were extracted:</p>
-        <p className="text-center text-lg mt-2 mb-8">***by hovering over images, you can read a synopsis for each show.</p>
       </div>
 
-      <div className="max-w-5xl w-full">
-        <p className="text-center text-lg mt-10 mb-8">Simple analysis of the show synopsis and hypothesis of why certain feature might be appealing based on them</p>
+      {/* Div 2 */}
+      <div className={`transition-opacity duration-500 ${activeDiv === 1 ? 'opacity-100' : 'opacity-0 hidden'}`}>
+        <div className="mb-4 mt-10 flex flex-col items-center">
+          <h2 className="font-semibold text-lg mb-8">From the 10 Countries with Highest Number of Netflix Subscribers:</h2>
+          <img src="/subs.png" alt="Netflix Logo" className="w-full max-w-lg" />
+          <p className="text-center mt-5">Data from FlixPatrol.</p>
+        </div>
+      </div>
+
+      {/* Div 3 */}
+      <div className={`transition-opacity duration-500 ${activeDiv === 2 ? 'opacity-100' : 'opacity-0 hidden'}`}>
+        <div className="mb-4 mt-10 flex flex-col items-center">
+          <h2 className="font-semibold text-lg mb-8">The following countries were selected for this analysis:</h2>
+          <ul className="list-disc">
+            <li>United States of America</li>
+            <li>Germany</li>
+            <li>Japan</li>
+            <li>Mexico</li>
+          </ul>
+          <p className="text-center mt-5">These countries were selected because their linguistic, cultural, and geographical differences can provide us with diverse insight on audience preference in the respective countries. </p>
+        </div>
+      </div>
+
+      {/* Div 4 */}
+      <div className={`transition-opacity duration-500 ${activeDiv === 3 ? 'opacity-100' : 'opacity-0 hidden'}`}>
+        <div className="mb-4 mt-10 flex flex-col items-center">
+          <h2 className="font-semibold text-lg mb-8">From the selected 4 countries, the 20 most popular Netflix shows were determined by ranking TV shows based on their cumulative weeks in the Netflix Top 10 from lists published between June 28, 2021 and June 20, 2023. From the rankings, the top three romance shows for each country was extracted:</h2>
+          <img src="/cum_weeks_netflix.png" alt="Netflix Analysis" className="w-full max-w-700" />
+          <p className="text-center mt-5">Data from Netflix: <a href="https://www.netflix.com/tudum/top10/" target="_blank" rel="noopener noreferrer" style={{ color: 'blue' }}>https://www.netflix.com/tudum/top10/</a></p>
+        </div>
+      </div>
+
+      {/* Div 5 */}
+      <div className={`transition-opacity duration-500 ${activeDiv === 4 ? 'opacity-100' : 'opacity-0 hidden'}`}>
+        <div className="mb-4 mt-10 flex flex-col items-center">
+          <h2 className="font-semibold text-lg mb-8">To analyze unfiltered audience opinions and thoughts about the shows, data was collected from popular social media platforms in each country. Specifically:</h2>
+          <ul className="list-disc">
+            <li>For the United States, data was scraped from the online discussion platform Reddit.</li>
+            <li>For Germany, data was scraped from Facebook groups and accounts specifically targeting users in Germany.</li>
+            <li>For Japan, data was scraped from Twitter users who write posts in Japanese.</li>
+            <li>For Mexico, data was scraped from Facebook groups and users who write posts and comments in Spanish.</li>
+          </ul>
+          <p className="text-center mt-5">This approach allows for a comprehensive examination of audience sentiment and discussions related to the shows across different cultural contexts.</p>
+        </div>
+      </div>
+
+      {/* Div 6 */}
+      <div className={`transition-opacity duration-500 ${activeDiv === 5 ? 'opacity-100' : 'opacity-0 hidden'}`}>
+        <div className="mb-4 mt-10 flex flex-col items-center">
+          <h2 className="font-semibold text-lg mb-8">Natural Language Processing will be used to quantify the textual data collected and conduct an informative analysis of what elements of popular Netflix romance shows specific audiences liked and did not like.</h2>
+          <ol className="list-decimal space-y-2">
+            <li>Utilized BERT Sentiment Analysis to divide the textual data into positively, negatively, and neutrally labeled data for further analysis.</li>
+            <li>
+              Determined what viewers enjoyed using positively labeled data to conduct:
+              <ol className="list-disc ml-8">
+                <li>BERT Name Entity Recognition (mainly filtering on “PER” or person).</li>
+                <li>Stanza Word Clouds (coloring by part-of-speech tags).</li>
+                <li>N-grams (lemmatized with Stanford CoreNLP).</li>
+              </ol>
+            </li>
+            <li>If significant negatively labeled data exist, determine what viewers did not enjoy by using the previously mentioned NLP tools.</li>
+          </ol>
+        </div>
       </div>
 
       <div className="flex flex-col items-center mb-8 mt-5">
-        <Link href="/mexico"> {/* Wrap with Link component */}
-            <ChevronsDown size={72} />
+        <button onClick={handleNext}>
+          <ArrowLeft size={72} />
+        </button>
+      </div>
+
+      <div className="flex flex-col items-center mb-8 mt-5">
+        <Link href="/overview">
+          <ChevronsDown size={72} />
         </Link>
       </div>
-     </main>
+
+    </main>
   );
 }
