@@ -7,7 +7,7 @@ export default function Overview() {
   const [activeDiv, setActiveDiv] = useState(0);
 
   const handleNext = () => {
-    setActiveDiv(activeDiv < 5 ? activeDiv + 1 : 0);
+    setActiveDiv(activeDiv < 6 ? activeDiv + 1 : 0);
   };
 
   return (
@@ -100,6 +100,18 @@ export default function Overview() {
             </li>
             <li>If significant negatively labeled data exist, determine what viewers did not enjoy by using the previously mentioned NLP tools.</li>
           </ol>
+        </div>
+      </div>
+
+      {/* Div 7 */}
+      <div className={`transition-opacity duration-500 ${activeDiv === 6 ? 'opacity-100' : 'opacity-0 hidden'}`}>
+        <div className="mb-4 mt-10 flex flex-col items-center">
+          <h2 className="font-semibold text-lg mb-8">Implicit Assumptions:</h2>
+          <ul className="list-disc">
+            <li>The audience of the top 3 romance tv shows are representative of the country’s population.</li>
+            <li>The top 3 romance tv shows are representative of characteristics seen in staple romantic relationships of the mainstream culture of the country.</li>
+            <li>Popularity can be defined by cumulative weeks on Netflix top ten rather than by audience engagement(total minutes watched) because Netflix has a strong data-centric approach that has been proven to optimize media recommendations.</li>
+          </ul>
         </div>
       </div>
 
