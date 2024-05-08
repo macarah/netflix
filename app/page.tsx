@@ -6,7 +6,7 @@ import React from 'react';
 
 // Define your links
 const links = [
-  { name: 'The Data', href: 'https://github.com/macarah/netflix_comedy' },
+  { name: 'The Data', href: 'https://github.com/macarah/netflix' },
   { name: 'About', href: '/about' },
   { name: 'The Best of Netflix', href: '/overview' },
   { name: 'Romance across Borders', href: '/conclusion' },
